@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S'inscrire</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color:  rgb(234, 241, 238);
+    }
+    *{
+      background-color: rgb(226, 237, 234);
+    }
+
+    .container {
+      background-color:rgb(224, 233, 230);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .social-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .social-button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .social-icon {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    .or-divider {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .or-divider::before,
+    .or-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    .or-divider span {
+      margin: 0 10px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .terms {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .terms a {
+      color: #007bff;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .close-button:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>THE SYSTEM LOCATION</h1>
+    <h1>S'inscrire</h1>
+    <div class="social-buttons">
+      <div class="social-button">
+        <i class="social-icon fab fa-google"></i>
+        Google
+      </div>
+      <div class="social-button">
+        <i class="social-icon fab fa-facebook-f"></i>
+        Facebook
+      </div>
+      <div class="social-button">
+        <i class="social-icon fab fa-github"></i>
+        GitHub
+      </div>
+      
+    </div>
+    <div class="or-divider">
+      <span>OU</span>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">Prénom:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Nom de famille:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+     <div> <a href="choix.html">
+        <button>valider</button>
+      </a>
+    </div><br>
+      <a href="login.html" class="button">
+        <button>PRECEDENT</button>
+      </a><br>
+    </form>
+    <div class="terms">
+      En vous inscrivant, vous acceptez nos <a href="#">conditions d'utilisation</a> et notre <a href="#">politique de confidentialité</a>.
+    </div><br><br>
+   
+    <center>&copy; 2024 <i>THE SYSTEM</i></center>
+    <div class="close-button" onclick="window.close()">
+      X
+    </div>
+  </div>
+</body>
+</html>

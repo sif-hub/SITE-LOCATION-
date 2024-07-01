@@ -1,0 +1,35 @@
+a{
+    list-style-type: none;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h1{
+    color: rgb(9, 22, 22);
+    text-align: center;
+    margin-bottom: 20px;
+}
+*{
+    background-color: rgb(163, 206, 214);
+}
+
+h4{
+    color: rgb(7, 14, 14);
+    text-align: center;
+}
+form{
+    text-align: center;
+    color: rgb(12, 3, 3);
+}
+option{
+    color: rgb(22, 12, 12);
+}
+
+        
+input,label{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: auto;
+        }
